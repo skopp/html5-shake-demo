@@ -1,0 +1,218 @@
+body {
+  background-image: -moz-linear-gradient(100% 100% 90deg, #fff, #eee);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#fff));
+  background-image: -khtml-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#fff));
+  background-image: -o-linear-gradient(#eee, #fff);
+}
+.join-view {
+  position: absolute;
+  height: 44px;
+  left: 0;
+  bottom: 0;
+  padding: 15px 0 25px 0;
+  border-top: 1px solid rgba(89,124,198,0.10);
+  background-image: -moz-linear-gradient(100% 100% 90deg, rgba(79,120,207,0.40), rgba(89,124,198,0.10));
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(89,124,198,0.10)), to(rgba(79,120,207,0.40)));
+  background-image: -khtml-gradient(linear, 0% 0%, 0% 100%, from(rgba(89,124,198,0.10)), to(rgba(79,120,207,0.40)));
+  background-image: -o-linear-gradient(rgba(89,124,198,0.10), rgba(79,120,207,0.40));
+  -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.30);
+  -moz-box-shadow: 0 0 20px rgba(0,0,0,0.30);
+  -khtml-box-shadow: 0 0 20px rgba(0,0,0,0.30);
+  -o-box-shadow: 0 0 20px rgba(0,0,0,0.30);
+  -icab-box-shadow: 0 0 20px rgba(0,0,0,0.30);
+  box-shadow: 0 0 20px rgba(0,0,0,0.30);
+}
+.join-view > button.kdbutton.punch {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+#platform {
+  width: 80%;
+  margin: 0 10% 0 10%;
+  padding: 0 0 84px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -icab-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#platform .bar {
+  margin-right: 1%;
+  width: 9%;
+  border: 1px solid rgba(0,0,0,0.10);
+  border-width: 0 1px;
+  -webkit-transition: width 0.1s ease-in , left 0.1s ease-in;
+  -moz-transition: width 0.1s ease-in , left 0.1s ease-in;
+  -khtml-transition: width 0.1s ease-in , left 0.1s ease-in;
+  -o-transition: width 0.1s ease-in , left 0.1s ease-in;
+  -icab-transition: width 0.1s ease-in , left 0.1s ease-in;
+  transition: width 0.1s ease-in , left 0.1s ease-in;
+  background-color: rgba(89,124,198,0.10);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -icab-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+}
+#platform .bar >div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  -webkit-transition: height 0.1s ease-in;
+  -moz-transition: height 0.1s ease-in;
+  -khtml-transition: height 0.1s ease-in;
+  -o-transition: height 0.1s ease-in;
+  -icab-transition: height 0.1s ease-in;
+  transition: height 0.1s ease-in;
+}
+#platform .bar h2 {
+  line-height: 25px;
+  text-align: center;
+  height: auto;
+  color: #aaa;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  word-break: break-all;
+}
+#platform .bar.named h2 {
+  color: #1f3053;
+  background-color: rgba(255,255,255,0.30);
+}
+.kdmodal {
+  padding: 7px 7px 7px 7px;
+  border: 1px solid rgba(255,255,255,0.30);
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -khtml-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  -icab-box-shadow: none !important;
+  box-shadow: none !important;
+  background-color: rgba(0,0,0,0.20);
+}
+.kdmodal .kdmodal-shadow {
+  -webkit-box-shadow: 0 0 45px 15px rgba(0,0,0,0.40);
+  -moz-box-shadow: 0 0 45px 15px rgba(0,0,0,0.40);
+  -khtml-box-shadow: 0 0 45px 15px rgba(0,0,0,0.40);
+  -o-box-shadow: 0 0 45px 15px rgba(0,0,0,0.40);
+  -icab-box-shadow: 0 0 45px 15px rgba(0,0,0,0.40);
+  box-shadow: 0 0 45px 15px rgba(0,0,0,0.40);
+}
+.kdmodal .kdmodal-inner {
+  height: auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -o-border-radius: 3px;
+  -icab-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.kdmodal .kdmodal-inner .kdmodal-title {
+  height: 50px;
+  font-size: 15px;
+  color: #474646;
+  line-height: 15px;
+  margin: 0;
+  padding: 0;
+}
+.kdmodal .kdmodal-inner .kdmodal-title span.title {
+  height: 100%;
+  line-height: 50px;
+  padding-left: 20px;
+  max-width: 440px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+.kdmodal .kdmodal-inner .close-icon {
+  right: 23px;
+  top: 23px;
+  z-index: 10;
+  background-position: -80px -220px;
+}
+.kdmodal .kdmodal-inner .close-icon:hover {
+  background-position: -80px -240px;
+}
+.kdmodal .kdmodal-inner .kdmodal-content {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  border-bottom: none;
+}
+.kdmodal .kdmodal-buttons {
+  height: 43px;
+  width: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -icab-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.kdmodal .kdmodal-buttons .modal-clean-gray,
+.kdmodal .kdmodal-buttons .modal-clean-red,
+.kdmodal .kdmodal-buttons .modal-cancel {
+  margin: 10px 10px 7px -2px;
+}
+.kdmodal .kdmodal.with-buttons {
+  position: relative !important;
+  top: -43px;
+}
+.kdmodal .modalformline {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 11px 20px 11px 20px;
+  width: auto;
+  height: auto;
+}
+.kdmodal .modalformline:last-child {
+  border-bottom: none;
+}
+.kdmodal .modalformline label {
+  min-width: 90px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.kdmodal .modalformline input,
+.kdmodal .modalformline textarea {
+  min-width: 160px;
+  margin-right: 15px;
+  border: 1px solid #c9c9c9;
+  color: #282521 !important;
+  line-height: 14px;
+  display: inline-block;
+  vertical-align: top;
+}
+.kdmodal .modalformline .on-off {
+  float: right;
+  margin-top: 0;
+}
+.kdmodal .modalformline .select {
+  margin-right: 10px;
+}
+.kdmodal .modalformline p {
+  line-height: 22px;
+}
+.kdmodal .modalformline div.kdselectbox span.title {
+  line-height: 23px;
+  height: 22px;
+}
+.kdmodal .modalformline .linkholder {
+  padding: 0 0 10px 0;
+  display: inline-block;
+  width: 200px;
+}
+.kdmodal .modalformline .linkholder a {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
